@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+}
+@layer utilities{
+  .orientation-sideways {
+      text-orientation: sideways;
+    }
+  
+    .orientation-upright {
+      text-orientation: upright;
+    }
+  
+    .orientation-mixed {
+      text-orientation: mixed;
+    }
+  
+    .orientation-sideways-right {
+      text-orientation: sideways-right;
+    }
+  
+    .orientation-glyph {
+      text-orientation: use-glyph-orientation;
+    }
 }
 
+/*
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
